@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Logo Movies</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.slidey.min.css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script defer src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+    	$(window).load(function(){
+      $('.flexslider').flexslider({
+    	animation: "slide",
+    	start: function(slider){
+    		$('body').removeClass('loading');
+    		}
+    		});
+    		});
+    </script>
+<script type="text/javascript">
+     $(document).ready(function() {
+     $("#fond,#popup").css({"display":"block"}); // on affiche les div
+     $("#fond,#close").click(function(){
+	   $("#fond,#popup").css({"display":"none"}); // si l'utilisateur clique sur le fond opaque ou le bouton, on ferme le tout
+    });
+    setTimeout(function(){
+              $("#fond,#popup").css({"display":"none"});
+           }, 10000); // temps en milliseconde avant fermeture
+      });
+    </script>
+  </head>
+  <body>
+ <section>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+       <div class="col-12 col-lg-3 logo">
+        <a href="index.html"><h1>LOGO<span>Movies</span></h1></a>
+        <img src="img/logo.jpg" class="logo-img" alt="">
+			</div>
+			<div class="col-12 col-lg-6 recherche pl-2">
+				<form action="#" method="post">
+					<input type="text" name="recherche" placeholder="Rechercher" required="">
+					<input type="submit" value="Go">
+				</form>
+			</div>
+			<div class="col-12 col-lg-3 register pl-4">
+				<ul>
+					<li><i class="fa fa-phone" aria-hidden="true"></i> (000) 123 456 789</li>
+          <button type="button" class="bt-login" data-toggle="modal" data-target="#exampleModal">
+					<li><a href="#" data-toggle="" data-target="" class="bt-login">Login</a></li>
+          </button>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+    </div>
+  </div>
+</section>
+<!-- fin du header -->
+<!-- Menu de navigation -->
+<section>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3 nav-bar pr-0">
+    </div>
+    <div class="col-lg-6 pl-0 pr-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item home-bg active pl-4 pr-4">
+              <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item films-bg pl-3 pr-3">
+              <a class="nav-link text-light dropdown-toggle href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ">
+               Films
+              </a>
+                <div class="dropdown-menu sous-menu-films" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="#">Actions</a>
+                   <a class="dropdown-item" href="#">Aventures</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Policiers</a>
+                </div>
+            </li>
+            <li class="nav-item series-bg">
+              <a class="nav-link text-light dropdown-toggle href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ">
+              Series
+              </a>
+               <div class="dropdown-menu sous-menu-series" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Netflix</a>
+                <a class="dropdown-item" href="#">Comédies</a>
+               <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Science Fiction</a>
+             </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-lg-3 nav-bar pl-0">
+     </div>
+  </div>
+</div>
+</section>
+<!-- fin de la navigation-->
+<!-- Modal à l'ouverture-->
+<div id="fond"></div>
+<div id="popup">
+<p><img src="img/1.png" alt="" class="logo-identification"></p>
+<p>Vous devez avoir aux minimum 18 ans</p>
+<p class="btn-clique-ici"><a href="#" onclick="age()">Cliquez-ici</a></p>
+<p class="visite">Pour valider votre age.</p>
+</div>
+<div id="close"></div>
+<!--slide1-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 pl-0 pr-0">
+         <div id="slidey" style="display:none;">
+    <ul>
+      <li><img src="img/slide1.jpg" alt=" "><p class='title'>NOTHINGWOOD</p><p class='description'> À une centaine de kilomètres de Kaboul, Salim Shaheen, l'acteur-réalisateur-producteur le plus populaire et prolifique d’Afghanistan.</p></li>
+      <li><img src="img/slide2.jpg" alt=" "><p class='title'>BRIMSTONE</p><p class='description'>Dans l’Ouest américain, à la fin du XIX siècle.Liz, une jeune femme d’une vingtaine d’années, mène une vie paisible auprès de sa famille...</p></li>
+      <li><img src="img/slide3.jpg" alt=" "><p class='title'>La vallée des fourmis perdues</p><p class='description'>Dans une paisible forêt, les reliefs d’un pique-nique déclenchent une guerre sans merci entre deux bandes rivales de fourmis convoitant le même butin.</p></li>
+      <li><img src="img/slide4.jpg" alt=" "><p class='title'>UNE VIE VIOLENTE</p><p class='description'>Malgré la menace de mort qui pèse sur sa tête, Stéphane décide de retourner en Corse pour assister à l'enterrement de Christophe.</p></li>
+      <li><img src="img/slide5.jpg" alt=" "><p class='title'>CHEZ NOUS</p><p class='description'>Pauline, infirmière à domicile, entre Lens et Lille, s’occupe seule de ses deux enfants et de son père ancien métallurgiste.</p></li>
+      <li><img src="img/slide6.jpg" alt=" "><p class='title'>CONJURING 2</p><p class='description'>Lorraine et Ed Warren se rendent dans le nord de Londres pour venir en aide à une mère qui élève seule ses quatre enfants dans une maison hantée par des esprits maléfiques.</p></li>
+    </ul>
+    </div>
+    </div>
+    <script src="js/jquery.slidey.js"></script>
+    <script src="js/jquery.dotdotdot.min.js"></script>
+     <script type="text/javascript">
+      $("#slidey").slidey({
+        interval: 8000,
+        listCount: 5,
+        autoplay: false,
+        showList: true
+      });
+      $(".slidey-list-description").dotdotdot();
+    </script>
+    </div>
+</div>
+<!--slide1-fin-->
+<!-- Boite modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content modal-connexion">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" >TI-FrontEnd-AllezCine</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="btn btn-outline-warning" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-soustitle">
+       <p>Accédez à votre compte</p>
+      </div>
+      <div class="modal-facebook">
+        <img src="img/login_facebook.png" alt="connexion facebook" class="img-reseaux-sociaux">
+      </div>
+      <div class="modal-twitter">
+        <img src="img/login_twitter.png" alt="connexion twitter" class="img-reseaux-sociaux">
+      </div>
+      <div class="modal-body-inscription">
+        <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Identifiant</label>
+           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre identifiant">
+            <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email avec quelqu'un d'autre.</small>
+        </div>
+        <div class="form-group">
+         <label for="exampleInputPassword1">Password</label>
+         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Créer un compte</button>
+        <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Rester connecter</button>
+        <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-warning">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--fin de la modal-->
+<!--Fin du slider-->
+<!--Social-->
+<div class="general_social_icons">
+  <nav class="social">
+    <ul>
+      <li class="twitter"><a href="#">Twitter <span class="fa fa-twitter"></span></a></li>
+      <li class="facebook"><a href="#">Facebook <span class="fa fa-facebook"></span></a></li>
+      <li class="dribbble"><a href="#">Dribbble <span class="fa fa-dribbble"></span></a></li>
+      <li class="google-plus"><a href="#">Google+ <span class="fa fa-google-plus"></span></a></li>
+    </ul>
+  </nav>
+</div>
+<!--Fin du Social-->
+<!--Bottom-->
+<div class="bottom">
+    <div class="container vignette">
+<div class="row pl-4">
+    <div class="col-2 point5 col-md-2 point5 mr-3 ml-3 pl-2 pr-2">
+      <img src="img/film1.jpg" title="album-name" class="img-responsive" alt=" " />
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title-video" id="exampleModalLongTitle">Django</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p> </br>
+              <h5>Sortie:</h5> <p>1987</p></br>
+              <h5>Description:</h5>  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p> </br>
+              <h5>Genre:</h5> <p>Triller</p></br>
+              <h5>Acteur:</h5> <p>Tarantino</p></br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal-->
+      <h3>JAWS</h3>
+        <p>Action</p>
+        <span>1997</span>
+    </div>
+    <div class="col-2 point5 col-md-2 point5 mr-3 ml-3 pl-2 pr-2">
+        <img src="img/film2.jpg" title="album-name" class="img-responsive" alt=" " />
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+          <h5>Realisator:</h5>  <p>Tarantino</p> </br>
+          <h5>Sortie:</h5> <p>1987</p></br>
+          <h5>Description:</h5>  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p> </br>
+          <h5>Genre:</h5> <p>Triller</p></br>
+          <h5>Acteur:</h5> <p>Tarantino</p></br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <h3>BATMAN</h3>
+      <p>Action</p> <span>1997</span>
+ </div>
+ <div class="col-2 point5 col-md-2 point5 mr-3 ml-3 pl-2 pr-2">
+      <img src="img/film3.jpg" title="album-name" class="img-responsive" alt=" " />
+        <!--Modal-->
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p> </br>
+              <h5>Sortie:</h5> <p>1987</p></br>
+              <h5>Description:</h5>  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p> </br>
+              <h5>Genre:</h5> <p>Triller</p></br>
+              <h5>Acteur:</h5> <p>Tarantino</p></br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal-->
+  <h3>DJANGO</h3>
+  <p>Action</p>
+  <span>1997</span>
+  </div>
+   <div class="col-2 point5 col-md-2 point5 mr-3 ml-3 pl-2 pr-2">
+        <img src="img/film4.jpg" title="album-name" class="img-responsive" alt=" " />
+         <!--Modal-->
+            <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+           <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>  <p>Tarantino</p> </br>
+              <h5>Sortie:</h5> <p>1987</p></br>
+              <h5>Description:</h5>  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p> </br>
+              <h5>Genre:</h5> <p>Triller</p></br>
+              <h5>Acteur:</h5> <p>Tarantino</p></br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal-->
+        <h3>HOBBIT</h3>
+        <p>Action</p>
+        <span>1997</span>
+    </div>
+  <div class="col-2 point5 col-md-2 point5 mr-3 ml-3 pl-2 pr-2">
+        <img src="img/film5.jpg" title="album-name" class="img-responsive" alt=" " />
+        <!--Modal-->
+
+            <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+           <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>  <p>Tarantino</p> </br>
+              <h5>Sortie:</h5> <p>1987</p></br>
+              <h5>Description:</h5>  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p> </br>
+              <h5>Genre:</h5> <p>Triller</p></br>
+              <h5>Acteur:</h5> <p>Tarantino</p></br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal-->
+        <h3>MARTIAN</h3>
+        <p>Action</p>
+        <span>1997</span>
+    </div>
+   </div>
+  </div>
+</div>
+<!--Fin Banner-Bottom-->
+<!-- Première partie Olga -->
+<div class="featured-movies>">
+  
+  <div class="container">
+    <h4 class="titre_section">FEATURED MOVIES</h4>
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#" id="all_movies" data-toggle="tab" aria-controls="imdb" aria-expanded="false">All</a></li>
+      <li role="presentation"><a href="#" id="all_action_movies" data-toggle="tab" aria-controls="imdb" aria-expanded="false">Actions</a></li>
+      <li role="presentation"><a href="#" id="all_policier_movies" data-toggle="tab" aria-controls="imdb" aria-expanded="false">Policiers</a></li>
+      <li role="presentation"><a href="#" role="tab" id="all_fantastique_movies" data-toggle="tab" aria-controls="imdb" aria-expanded="false">Fantastique</a></li>
+    </ul>
+    
+
+    <div class="container vignette_1">
+      <div class="row">
+
+
+        <div class="col-6 col-lg-2 fantastique_movies"> <img src="img/film6.jpg" title="album-name" class="img-responsive" alt=" " /> 
+          
+          <!--Modal-->
+          
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal-->
+          
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+        <div class="col-6 col-lg-2 policier_movies"> <img src="img/film7.jpg" title="album-name" class="img-responsive" alt=" " />
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+        <div class="col-6 col-lg-2 fantastique_movies" > <img src="img/film8.jpg" title="album-name" class="img-responsive" alt=" " /> 
+          <!--Modal-->
+          
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal-->
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+        <div class="col-6 col-lg-2 action_movies"> <img src="img/film9.jpg" title="album-name" class="img-responsive" alt=" " /> 
+          <!--Modal-->
+          
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal-->
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+        <div class="col-6 col-lg-2 action_movies"> <img src="img/film10.jpg" title="album-name" class="img-responsive" alt=" " /> 
+          <!--Modal-->
+          
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal-->
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+        <div class="col-6 col-lg-2 fantastique_movies"> <img src="img/film11.jpg" title="album-name" class="img-responsive" alt=" " /> 
+          <!--Modal-->
+          
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal-->
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+     
+  
+
+
+  <!--2-->
+
+
+  
+      <div class="col-6 col-lg-2 action_movies"> <img src="img/film12.jpg" title="album-name" class="img-responsive" alt=" " /> 
+        
+        <!--Modal-->
+        
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que 
+                  travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal-->
+        
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+      <div class="col-6 col-lg-2 action_movies"> <img src="img/film13.jpg" title="album-name" class="img-responsive" alt=" " />
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> 
+      </div>
+      <div class="col-6 col-lg-2 policier_movies"> <img src="img/film14.jpg" title="album-name" class="img-responsive" alt=" " /> 
+        
+        <!--Modal-->
+        
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal-->
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+      <div class="col-6 col-lg-2 action_movies"> <img src="img/film15.jpg" title="album-name" class="img-responsive" alt=" " /> 
+        <!--Modal-->
+        
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal-->
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+      <div class="col-6 col-lg-2 fantastique_movies"> <img src="img/film16.jpg" title="album-name" class="img-responsive" alt=" " /> 
+        <!--Modal-->
+        
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal-->
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+      <div class="col-6 col-lg-2 action_movies"> <img src="img/film17.jpg" title="album-name" class="img-responsive" alt=" " /> 
+        <!--Modal-->
+        
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal-->
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+    </div>
+     </div>
+    <div class="col-md-12 text-center"> <a href="#">
+      <button id="singlebutton" name="singlebutton" class="btn btn-primary" href> PLUS DE FILMS </button>
+      </a> </div>
+  </div>
+</div>
+<!--Global-->
+
+<div class="featured-series-tv>">
+  
+  <div class="container">
+    <h4 class="titre_section">FEATURED SERIES TV</h4>
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#" id="all_series" data-toggle="tab" aria-controls="imdb" aria-expanded="false">All</a></li>
+      <li role="presentation"><a href="#" id="all_action_series" data-toggle="tab" aria-controls="imdb" aria-expanded="false">Actions</a></li>
+      <li role="presentation"><a href="#" id="all_policier_series" data-toggle="tab" aria-controls="imdb" aria-expanded="false">Policiers</a></li>
+      <li role="presentation"><a href="#" role="tab" id="all_fantastique_series" data-toggle="tab" aria-controls="imdb" aria-expanded="false">Fantastique</a></li>
+    </ul>
+    
+    <div class="container vignette_1">
+      <div class="row">
+        <div class="col-6 col-lg-2 fantastique_series"> <img src="img/film18.jpg" title="album-name" class="img-responsive" alt=" " /> 
+          
+          <!--Modal-->
+          
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal-->
+          
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+        <div class="col-6 col-lg-2 action_series"> <img src="img/film19.jpg" title="album-name" class="img-responsive" alt=" " />
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+        <div class="col-6 col-lg-2 policier_series"> <img src="img/film20.jpg" title="album-name" class="img-responsive" alt=" " /> 
+          <!--Modal-->
+          
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal-->
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+        <div class="col-6 col-lg-2 fantastique_series"> <img src="img/film21.jpg" title="album-name" class="img-responsive" alt=" " /> 
+          <!--Modal-->
+          
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal-->
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+        <div class="col-6 col-lg-2 action"> <img src="img/film22.jpg" title="album-name" class="img-responsive" alt=" " /> 
+          <!--Modal-->
+          
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal-->
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+        <div class="col-6 col-lg-2 action_series"> <img src="img/film23.jpg" title="album-name" class="img-responsive" alt=" " /> 
+          <!--Modal-->
+          
+          <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                  <h5>Realisator:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                  <h5>Sortie:</h5>
+                  <p>1987</p>
+                  </br>
+                  <h5>Description:</h5>
+                  <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                  </br>
+                  <h5>Genre:</h5>
+                  <p>Triller</p>
+                  </br>
+                  <h5>Acteur:</h5>
+                  <p>Tarantino</p>
+                  </br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal-->
+          <h5>Titre</h5>
+          <p>Horreur</p>
+          <span>1997</span> </div>
+  
+  
+
+      <div class="col-6 col-lg-2 fantastique_series"> <img src="img/film24.jpg" title="album-name" class="img-responsive" alt=" " /> 
+        
+        <!--Modal-->
+        
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que 
+                  travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal-->
+        
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+      <div class="col-6 col-lg-2 policier_series"> <img src="img/film25.jpg" title="album-name" class="img-responsive" alt=" " />
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+      <div class="col-6 col-lg-2 action_series"> <img src="img/film26.jpg" title="album-name" class="img-responsive" alt=" " /> 
+        
+        <!--Modal-->
+        
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal-->
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+      <div class="col-6 col-lg-2 policier_series"> <img src="img/film27.jpg" title="album-name" class="img-responsive" alt=" " /> 
+        <!--Modal-->
+        
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal-->
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+      <div class="col-6 col-lg-2 action_series"> <img src="img/film28.jpg" title="album-name" class="img-responsive" alt=" " /> 
+        <!--Modal-->
+        
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal-->
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+      <div class="col-6 col-lg-2 fantastique_series"> <img src="img/film29.jpg" title="album-name" class="img-responsive" alt=" " /> 
+        <!--Modal-->
+        
+        <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+                <h5>Realisator:</h5>
+                <p>Tarantino</p>
+                </br>
+                <h5>Sortie:</h5>
+                <p>1987</p>
+                </br>
+                <h5>Description:</h5>
+                <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+                </br>
+                <h5>Genre:</h5>
+                <p>Triller</p>
+                </br>
+                <h5>Acteur:</h5>
+                <p>Tarantino</p>
+                </br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal-->
+        <h5>Titre</h5>
+        <p>Horreur</p>
+        <span>1997</span> </div>
+    </div>
+  </div>
+    <div class="col-md-12 text-center"> <a href="#">
+      <button id="singlebutton" name="singlebutton" class="btn btn-primary" href> PLUS DE FILMS </button>
+      </a> </div>
+  </div>
+</div>
+<!-- fin premère partie Olga-->
+<!-- deuxième partie Olga -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+<div style='display:none;' id='invisible'>
+
+<div class="featured-series-tv>">
+<h4 class="titre_section">FEATURED SERIES TV</h4>
+<div class="container">
+<ul id="myTab" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">All</a></li>
+  <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Action</a></li>
+  <li role="presentation"><a href="#rating" id="rating-tab" role="tab" data-toggle="tab" aria-controls="rating" aria-expanded="true">Policier</a></li>
+  <li role="presentation"><a href="#imdb" role="tab" id="imdb-tab" data-toggle="tab" aria-controls="imdb" aria-expanded="false">Fantastique</a></li>
+</ul>
+<div class="container vignette_1">
+  <div class="row">
+    <div class="col-6 col-lg-2 fantastique"> <img src="img/film18.jpg" title="album-name" class="img-responsive" alt=" " />
+
+      <!--Modal-->
+
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+    <div class="col-6 col-lg-2 action"> <img src="img/film19.jpg" title="album-name" class="img-responsive" alt=" " />
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+    <div class="col-6 col-lg-2 policier"> <img src="img/film20.jpg" title="album-name" class="img-responsive" alt=" " />
+      <!--Modal-->
+
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+    <div class="col-6 col-lg-2 fantastique"> <img src="img/film21.jpg" title="album-name" class="img-responsive" alt=" " />
+      <!--Modal-->
+
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+    <div class="col-6 col-lg-2 action"> <img src="img/film22.jpg" title="album-name" class="img-responsive" alt=" " />
+      <!--Modal-->
+
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+    <div class="col-6 col-lg-2 action"> <img src="img/film23.jpg" title="album-name" class="img-responsive" alt=" " />
+      <!--Modal-->
+
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+  </div>
+</div>
+</div>
+
+<div class="container vignette_2">
+  <div class="row">
+    <div class="col-6 col-lg-2 fantastique"> <img src="img/film24.jpg" title="album-name" class="img-responsive" alt=" " />
+
+      <!--Modal-->
+
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que
+                travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+    <div class="col-6 col-lg-2 policier"> <img src="img/film25.jpg" title="album-name" class="img-responsive" alt=" " />
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+    <div class="col-6 col-lg-2 action"> <img src="img/film26.jpg" title="album-name" class="img-responsive" alt=" " />
+
+      <!--Modal-->
+
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+    <div class="col-6 col-lg-2 policier"> <img src="img/film27.jpg" title="album-name" class="img-responsive" alt=" " />
+      <!--Modal-->
+
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+    <div class="col-6 col-lg-2 action"> <img src="img/film28.jpg" title="album-name" class="img-responsive" alt=" " />
+      <!--Modal-->
+
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+    <div class="col-6 col-lg-2 fantastique"> <img src="img/film29.jpg" title="album-name" class="img-responsive" alt=" " />
+      <!--Modal-->
+
+      <button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModalLong"></button>
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Django</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cM0WxEv5mwg" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <h5>Realisator:</h5>
+              <p>Tarantino</p>
+              </br>
+              <h5>Sortie:</h5>
+              <p>1987</p>
+              </br>
+              <h5>Description:</h5>
+              <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.</p>
+              </br>
+              <h5>Genre:</h5>
+              <p>Triller</p>
+              </br>
+              <h5>Acteur:</h5>
+              <p>Tarantino</p>
+              </br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+      <h5>Titre</h5>
+      <p>Horreur</p>
+      <span>1997</span> </div>
+  </div>
+
+</div>
+</div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- fin deuxième partie Olga -->
+<!--- Film populaire --->
+<div class="container">
+ <div class="row">
+  <div class="col-12">
+  <!-- Latest-tv-series -->
+	<div class="Latest-tv-series">
+    <div class="div-title-film-populaire">
+      <h4 class="title-film-populaire">SHOP MOVIES</h4>
+    </div>
+		 <div class="container">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="agile_tv_series_grid">
+                <div class="row">
+								<div class="col-12 col-lg-6 agile_tv_series_grid_left">
+									<div class="w3ls_market_video_grid1">
+										<img src="images/h1-1.jpg" alt=" " class="img-responsive" />
+										<a class="w3_play_icon" href="#small-dialog">
+										</a>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6 agile_tv_series_grid_right">
+									<p class="fexi_header">the conjuring 2</p>
+									<p class="fexi_header_para"><span class="conjuring_w3">Story Line<label>:</label></span> 720p,Bluray HD Free Movie Downloads, Watch Free Movies Online with high speed Free Movie Streaming | MyDownloadTube Lorraine and Ed Warren go to north London to help a single...</p>
+									<p class="fexi_header_para"><span>Date of Release<label>:</label></span> Jun 10, 2016 </p>
+									<p class="fexi_header_para">
+										<span>Genres<label>:</label> </span>
+										<a href="genres.html">Drama</a> |
+										<a href="genres.html">Adventure</a> |
+										<a href="genres.html">Family</a>
+									</p>
+									<p class="fexi_header_para fexi_header_para1"><span>Star Rating<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+								</div>
+              </div>
+								<div class="clearfix"> </div>
+								<div class="agileinfo_flexislider_grids">
+									<div class="col-md-2 w3l-movie-gride-agile">
+										<a href="#"><img src="images/m22.jpg" title="album-name" class="img-responsive" alt=" " />
+										</a>
+									</div>
+									<div class="col-md-2 w3l-movie-gride-agile">
+										<a href="#"><img src="images/m2.jpg" title="album-name" class="img-responsive" alt=" " />
+							      </a>
+									</div>
+									<div class="col-md-2 w3l-movie-gride-agile">
+										<a href="#"><img src="images/m9.jpg" title="album-name" class="img-responsive" alt=" " />
+
+										</a>
+									</div>
+									<div class="col-md-2 w3l-movie-gride-agile">
+										<a href="#"><img src="images/m7.jpg" title="album-name" class="img-responsive" alt=" " />
+
+										</a>
+									</div>
+									<div class="col-md-2 w3l-movie-gride-agile">
+										<a href="#"><img src="images/m11.jpg" title="album-name" class="img-responsive" alt=" " />
+										</a>
+									</div>
+									<div class="col-md-2 w3l-movie-gride-agile">
+										<a href="#"><img src="images/m17.jpg" title="album-name" class="img-responsive" alt=" " />
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					<li>
+              <div class="agile_tv_series_grid">
+                <div class="row">
+                <div class="col-12 col-lg-6 agile_tv_series_grid_left">
+                  <div class="w3ls_market_video_grid1">
+                    <img src="images/h2-1.jpg" alt=" " class="img-responsive" />
+                    <a class="w3_play_icon" href="#small-dialog">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 agile_tv_series_grid_right">
+                  <p class="fexi_header">the conjuring 2</p>
+                  <p class="fexi_header_para"><span class="conjuring_w3">Story Line<label>:</label></span> 720p,Bluray HD Free Movie Downloads, Watch Free Movies Online with high speed Free Movie Streaming | MyDownloadTube Lorraine and Ed Warren go to north London to help a single...</p>
+                  <p class="fexi_header_para"><span>Date of Release<label>:</label></span> Jun 10, 2016 </p>
+                  <p class="fexi_header_para">
+                    <span>Genres<label>:</label> </span>
+                    <a href="genres.html">Drama</a> |
+                    <a href="genres.html">Adventure</a> |
+                    <a href="genres.html">Family</a>
+                  </p>
+                  <p class="fexi_header_para fexi_header_para1"><span>Star Rating<label>:</label></span>
+                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                  </p>
+                </div>
+              </div>
+                <div class="clearfix"> </div>
+                <div class="agileinfo_flexislider_grids">
+                  <div class="col-md-2 w3l-movie-gride-agile">
+                    <a href="#"><img src="images/m22.jpg" title="album-name" class="img-responsive" alt=" " />
+                    </a>
+                  </div>
+                  <div class="col-md-2 w3l-movie-gride-agile">
+                    <a href="#"><img src="images/m2.jpg" title="album-name" class="img-responsive" alt=" " />
+                    </a>
+                  </div>
+                  <div class="col-md-2 w3l-movie-gride-agile">
+                    <a href="#"><img src="images/m9.jpg" title="album-name" class="img-responsive" alt=" " />
+
+                    </a>
+                  </div>
+                  <div class="col-md-2 w3l-movie-gride-agile">
+                    <a href="#"><img src="images/m7.jpg" title="album-name" class="img-responsive" alt=" " />
+
+                    </a>
+                  </div>
+                  <div class="col-md-2 w3l-movie-gride-agile">
+                    <a href="#"><img src="images/m11.jpg" title="album-name" class="img-responsive" alt=" " />
+                    </a>
+                  </div>
+                  <div class="col-md-2 w3l-movie-gride-agile">
+                    <a href="#"><img src="images/m17.jpg" title="album-name" class="img-responsive" alt=" " />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+						
+					</ul>
+				</div>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+</section>
+<!--contact-->
+<div class="contact-us>">
+<div class="title-contact">
+  <h4 class="titre_section">CONTACT US</h4>
+</div>
+
+  <div class="container contact">
+    <div class="row contact-us">
+      <div class="col-lg-3 col-6 info">
+        <div class="info_1">
+          <div class="picto-center"> <a href="#"><img src="img/map.png"></a> </div>
+          <div class="info_left">
+            <h4>Address</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 info">
+        <div class="info_1">
+          <div class="picto-center"> <a href="#"><img src="img/telephone.png"></a> </div>
+          <div class="info_left">
+            <h4>Call</h4>
+            <p>+32478654328</p>
+            <p>+32478654328</p>
+            <p>+32478654328</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 info">
+        <div class="info_1">
+          <div class="picto-center"> <a href="#"><img src="img/mail.png"></a> </div>
+          <div class="info_left">
+            <h4>Email</h4>
+            <p>example@mail.com</p>
+            <p>example@mail.com</p>
+            <p>example@mail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 info">
+        <div class="info_1">
+          <div class="picto-center"> <a href="#"><img src="img/human.png"></a> </div>
+          <div class="info_left">
+            <h4>Social media</h4>
+            <ul class="social-btns center-block">
+              <li>
+                <button class="btn btn-facebook"><i class="fa fa-facebook pull-left" aria-hidden="true"></i>Facebook</button>
+              </li>
+              <li>
+                <button class="btn btn-twitter"><i class="fa fa-twitter pull-left" aria-hidden="true"></i>Twitter</button>
+              </li>
+              <li>
+                <button class="btn btn-google"><i class="fa fa-google-plus pull-left" aria-hidden="true"></i>Google</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row formulaire">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input id="form_name" type="text" name="name" class="form-control" placeholder="FIRST NAME" required data-error="Firstname is required.">
+          <div class="help-block with-errors"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="LAST NAME" required data-error="Lastname is required.">
+          <div class="help-block with-errors"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input id="form_email" type="email" name="email" class="form-control" placeholder="EMAIL" required data-error="Valid email is required.">
+          <div class="help-block with-errors"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="SELECT">
+          <div class="help-block with-errors"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <textarea id="form_message" name="message" class="form-control" placeholder="YOUR MESSAGE" rows="4" required data-error="Please,leave us a message."></textarea>
+          <div class="help-block with-errors"></div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <input type="submit" class="btn btn-success btn-send" value="SEND MESSAGE">
+      </div>
+    </div>
+  </div>
+</div>
+<!--fin de contact-->
+<!--footer-->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="one_footer_grid_left1">
+          <h2>Subscribe to us</h2>
+          <div class="one_footer_grid_left1_pos">
+            <form action="#" method="post">
+              <input type="email" name="email" placeholder="Your email..." required>
+              <input type="submit" value="Send">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 right"> <a href="index.html"> <img src="img/2.png" class="logo-img-footer" alt=""></a> </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-5 one_footer_grid1_left">
+        <p>&copy; 2016 One Movies. All rights reserved | Design by Daniel et Olga</p>
+      </div>
+      <div class="col-md-7 one_footer_grid1_right">
+        <ul>
+          <li> <a href="">Movies</a> </li>
+          <li> <a href="">FAQ</a> </li>
+          <li> <a href="">Action</a> </li>
+          <li> <a href="">Adventure</a> </li>
+          <li> <a href="">Comedy</a> </li>
+          <li> <a href="">Icons</a> </li>
+          <li> <a href="">Contact Us</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--fin footer-->
+<!--<script type="text/javascript">
+  $('#myModal').modal(options)
+  $('#myModal').data('bs.modal').handleUpdate()
+</script>-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+$('#all_series').click(function() {
+$('.fantastique_series').show()
+$('.policier_series').show()
+$('.action_series').show()
+
+})
+
+$('#all_fantastique_series').click(function() {
+$('.fantastique_series').show()
+$('.policier_series').hide()
+$('.action_series').hide()
+
+})
+
+$('#all_policier_series').click(function() {
+$('.fantastique_series').hide()
+$('.policier_series').show()
+$('.action_series').hide()
+
+})
+
+$('#all_action_series').click(function() {
+$('.fantastique_series').hide()
+$('.policier_series').hide()
+$('.action_series').show()
+
+})
+
+$('#all_movies').click(function() {
+$('.fantastique_movies').show()
+$('.policier_movies').show()
+$('.action_movies').show()
+
+})
+
+$('#all_fantastique_movies').click(function() {
+$('.fantastique_movies').show()
+$('.policier_movies').hide()
+$('.action_movies').hide()
+
+})
+
+$('#all_policier_movies').click(function() {
+$('.fantastique_movies').hide()
+$('.policier_movies').show()
+$('.action_movies').hide()
+
+})
+
+$('#all_action_movies').click(function() {
+$('.fantastique_movies').hide()
+$('.policier_movies').hide()
+$('.action_movies').show()
+
+})
+
+
+
+</script> 
+    <script src="js/cookiechoices.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function(event){cookieChoices.showCookieConsentBar('Ce site utilise des cookies pour vous offrir le meilleur service. En poursuivant votre navigation, vous acceptez l’utilisation des cookies.', 'J’accepte', 'En savoir plus', 'http://localhost/formation/TI-FrontEnd-AllezCine//mentions-legales/');});</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
